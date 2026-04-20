@@ -1,47 +1,61 @@
-.resource-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: Arial, sans-serif;
 }
 
+/* container */
+.resource-grid {
+  width: 100%;
+}
+
+/* single column layout (IMPORTANT for StoryMaps) */
 .resource-col {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
+/* section title */
 .cat-title {
-  font-size: 1.2rem;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: #13316D;
-  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  color: #13316D;
+  margin: 0 0 6px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #13316D;
 }
 
+/* card */
 .resource-card {
   display: block;
-  background: white;
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 10px;
   padding: 14px 16px;
   text-decoration: none;
   color: #000;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #e6e6e6;
   transition: all 0.2s ease;
 }
 
+/* hover */
 .resource-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(19, 49, 109, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
+/* title */
 .resource-card h3 {
   margin: 0 0 6px 0;
-  font-size: 16px;
+  font-size: 15px;
   color: #13316D;
 }
 
+/* description */
 .resource-card p {
   margin: 0;
-  font-size: 14px;
+  font-size: 13.5px;
   color: #555;
+  line-height: 1.4;
 }
