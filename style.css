@@ -1,56 +1,47 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  font-family: Arial, sans-serif;
+.resource-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 
-/* container */
-.resource-grid {
+.resource-col {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  width: 100%;
 }
 
-/* title */
 .cat-title {
-  font-size: 18px;
-  font-weight: 700;
-  color: #13316D;
-  margin: 0 0 6px 0;
-  padding-bottom: 6px;
-  border-bottom: 2px solid #13316D;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #13316D;
+  color: white;
 }
 
-/* card */
 .resource-card {
   display: block;
-  background: #fff;
-  border-radius: 10px;
+  background: white;
+  border-radius: 12px;
   padding: 14px 16px;
   text-decoration: none;
   color: #000;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e0e0e0;
   transition: all 0.2s ease;
 }
 
-/* hover */
 .resource-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(19, 49, 109, 0.2);
 }
 
-/* text */
 .resource-card h3 {
   margin: 0 0 6px 0;
-  font-size: 15px;
+  font-size: 16px;
   color: #13316D;
 }
 
 .resource-card p {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 14px;
   color: #555;
-  line-height: 1.4;
 }
