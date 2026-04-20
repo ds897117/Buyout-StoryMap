@@ -1,48 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resource Grid</title>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .resource-grid { display: flex; gap: 20px; }
-    .resource-col { width: 100%; }
-    .resource-card { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 6px; }
-    .cat-title { margin-bottom: 15px; }
-  </style>
+<meta charset="UTF-8">
+<title>Resources</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 20px;
+  }
+
+  .resource-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* wraps on smaller screens */
+  }
+
+  .resource-card {
+    flex: 1 1 250px; /* responsive width */
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #e0e0e0;
+    transition: all 0.25s ease;
+  }
+
+  .resource-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(19, 49, 109, 0.25); /* #13316D shadow */
+  }
+
+  .resource-card h3 {
+    margin-top: 0;
+    color: #13316D;
+    font-size: 18px;
+  }
+
+  .resource-card p {
+    margin-bottom: 0;
+    color: #555;
+  }
+
+  a.resource-card {
+    display: block;
+  }
+
+</style>
 </head>
+
 <body>
 
+<h2>Flood Buyout Resources</h2>
+
 <div class="resource-grid">
-  <div class="resource-col">
-    <h2 class="cat-title local">Local & County Data</h2>
 
-    <div class="resource-card local">
-      <h3><a href="https://www.brazoriacountytx.gov/departments/engineering/gis" target="_blank">Brazoria County</a></h3>
-      <p>Data and Applications for Brazoria County.</p>
-    </div>
+  <a class="resource-card" href="https://www.hcfcd.org/Activity/Additional-Programs/Home-Buyout-Program" target="_blank">
+    <h3>Harris County Flood Control District</h3>
+    <p>Home Buyout Program information and resources.</p>
+  </a>
 
-    <div class="resource-card local">
-      <h3><a href="https://cohgis-mycity.opendata.arcgis.com/" target="_blank">City of Houston</a></h3>
-      <p>City of Houston's Data Hub.</p>
-    </div>
+  <a class="resource-card" href="https://www.newamerica.org/insights/mandatory-home-buyouts-in-houston/" target="_blank">
+    <h3>New America Article</h3>
+    <p>Analysis of mandatory home buyouts in Houston.</p>
+  </a>
 
-    <div class="resource-card local">
-      <h3><a href="https://www.fortbendcountytx.gov/government/departments/county-services/engineering/gis-data" target="_blank">Fort Bend County</a></h3>
-      <p>Data and Maps for Fort Bend County.</p>
-    </div>
+  <a class="resource-card" href="https://www.texasappleseed.org/harris-county-home-buyout-study" target="_blank">
+    <h3>Texas Appleseed Study</h3>
+    <p>Study on Harris County’s home buyout program.</p>
+  </a>
 
-    <div class="resource-card local">
-      <h3><a href="https://geo-harriscounty.opendata.arcgis.com/" target="_blank">Harris County</a></h3>
-      <p>Harris County open data and applications.</p>
-    </div>
+  <a class="resource-card" href="https://www.texasstandard.org/stories/harris-county-flood-buyouts-model/" target="_blank">
+    <h3>Texas Standard Article</h3>
+    <p>How Harris County became a model for flood buyouts.</p>
+  </a>
 
-    <div class="resource-card local">
-      <h3><a href="https://data-moco.opendata.arcgis.com/" target="_blank">Montgomery County</a></h3>
-      <p>Data for Montgomery County.</p>
-    </div>
-
-  </div>
 </div>
 
 </body>
