@@ -7,18 +7,19 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    background: #f5f7fb;
     margin: 20px;
+    background: transparent; /* transparent page background */
   }
 
   .resource-grid {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* wraps on smaller screens */
+    flex-wrap: nowrap; /* keep everything in one row */
+    align-items: flex-start; /* prevents equal height stretching */
   }
 
   .resource-card {
-    flex: 1 1 250px; /* responsive width */
+    width: 260px; /* fixed width so they stay consistent */
     background: white;
     border-radius: 12px;
     padding: 20px;
@@ -30,7 +31,7 @@
 
   .resource-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(19, 49, 109, 0.25); /* #13316D shadow */
+    box-shadow: 0 8px 20px rgba(19, 49, 109, 0.25);
   }
 
   .resource-card h3 {
@@ -47,13 +48,10 @@
   a.resource-card {
     display: block;
   }
-
 </style>
 </head>
 
 <body>
-
-<h2>Flood Buyout Resources</h2>
 
 <div class="resource-grid">
 
