@@ -6,19 +6,19 @@ html, body {
 }
 
 body {
-  display: inline-block;
   font-family: Arial, sans-serif;
 }
 
 .resource-grid {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .resource-card {
-  width: 260px;
+  width: 100%;
+  max-width: 420px;
   background: white;
   border-radius: 12px;
   padding: 16px;
