@@ -1,47 +1,42 @@
-.resource-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background: transparent;
 }
 
-.resource-col {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.cat-title {
-  font-size: 1.2rem;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: #13316D;
-  color: white;
-}
+flex-wrap: nowrap;
 
 .resource-card {
-  display: block;
-  background: white;
-  border-radius: 12px;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #e0e0e0;
-  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 420px;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #e0e0e0;
+    transition: all 0.25s ease;
 }
 
 .resource-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(19, 49, 109, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(19, 49, 109, 0.25);
 }
 
 .resource-card h3 {
-  margin: 0 0 6px 0;
-  font-size: 16px;
-  color: #13316D;
+    margin: 0 0 8px 0;
+    color: #13316D;
+    font-size: 16px;
 }
 
 .resource-card p {
-  margin: 0;
-  font-size: 14px;
-  color: #555;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
 }
